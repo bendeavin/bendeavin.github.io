@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ben Deavin</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      background: radial-gradient(circle at 30% 30%, #1a1a1a, #121212 80%);
+      color: #e0e0e0;
+      padding: 20px 20px 0 20px;
+      transition: background-color 0.4s, color 0.4s;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+
+    section, footer {
+      background-color: #1e1e1e;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.8);
+    }
+
+    header, section {
+      padding: 30px;
+      max-width: 960px;
+      width: 100%;
+    }
+
+    footer {
+      width: 100%;
+      padding: 30px;
+    }
+
+    header {
+      text-align: center;
+      animation: fadeIn 800ms ease-in;
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2em;
+      color: #aaaaaa;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #64b5f6;
+      font-weight: bold;
+      transition: color 0.3s;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    nav a svg {
+      width: 20px;
+      height: 20px;
+      fill: currentColor;
+    }
+
+    nav a:hover {
+      color: #90caf9;
+    }
+
+    section h2 {
+      margin-bottom: 15px;
+      color: #90caf9;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+    }
+
+    .gallery img {
+      width: 200px;
+      height: auto;
+      border-radius: 8px;
+      transition: transform 0.3s, box-shadow 0.3s;
+      box-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 12px rgba(100, 181, 246, 0.5);
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9em;
+      color: #777;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Ben Deavin</h1>
+    <p>Senior Software Engineering Manager · Occasional Photographer</p>
+    <nav>
+      <a href="https://www.linkedin.com/in/bendeavin/" target="_blank">
+        <svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.784 1.764-1.75 1.764zm13.5 11.268h-3v-5.604c0-1.337-.027-3.065-1.871-3.065-1.872 0-2.159 1.46-2.159 2.967v5.702h-3v-10h2.881v1.367h.041c.401-.761 1.379-1.563 2.841-1.563 3.038 0 3.6 2.001 3.6 4.604v5.592z"/></svg>
+        LinkedIn
+      </a>
+      <a href="https://500px.com/p/bendeavin" target="_blank">
+        <svg viewBox="0 0 24 24"><path d="M22.47 13.325a5.522 5.522 0 0 0-2.205-.443 5.53 5.53 0 0 0-4.84 2.93l-6.47.005a2.345 2.345 0 0 1 0-4.69h6.47a5.534 5.534 0 0 0 4.84 2.93c.775 0 1.513-.155 2.205-.443zm-16.47-2.33h8a3.335 3.335 0 0 1 0 6.67h-8a3.335 3.335 0 0 1 0-6.67zm0-7.67h13a3 3 0 1 1 0 6h-13a3 3 0 1 1 0-6z"/></svg>
+        500px
+      </a>
+      <a href="https://colourblindphoto.tumblr.com/" target="_blank">
+        <svg viewBox="0 0 24 24"><path d="M14.145 22.54c-.22.105-.59.204-1.095.287a6.703 6.703 0 0 1-1.29.106c-.57 0-1.084-.057-1.54-.17a3.48 3.48 0 0 1-1.27-.602c-.348-.26-.64-.608-.873-1.04a4.19 4.19 0 0 1-.482-1.38c-.03-.238-.045-.746-.045-1.524v-5.19h-2.2v-2.39c.52-.17.96-.42 1.32-.74.36-.31.655-.687.885-1.127.23-.44.4-.95.51-1.526a11.9 11.9 0 0 0 .175-1.882V4.047h2.438v3.202h2.922v2.91h-2.922v5.01c0 .71.037 1.2.112 1.46.075.26.207.472.396.636.19.165.44.248.75.248.34 0 .667-.09.98-.27.23-.14.45-.31.66-.51.21-.2.39-.414.54-.64v3.432a5.27 5.27 0 0 1-1.07.794z"/></svg>
+        Tumblr
+      </a>
+    </nav>
+  </header>
+
+  <section>
+    <h2>About Me</h2>
+    <p>I’m a senior software engineering manager with over 15 years of experience building web platforms, services, and teams. I’ve worked across startups and enterprise tech, and I’m passionate about pragmatic architecture, developer experience, and shipping stuff that matters.</p>
+    <p>Photography is a creative outlet and hobby of mine—you’ll find some of my work scattered across 500px and Tumblr (links above!).</p>
+  </section>
+
+  <section>
+    <h2>A Note About This Website</h2>
+    <p>Despite having years of experience in web development, I had ChatGPT generate this site. It’s a little experiment in delegation, automation—and perhaps a test of whether AI can style things better than I ever could on a Friday afternoon.</p>
+
+    <h3>Editors Note</h2>
+    <p>
+      Well, that was an experience. Like pair programming with a puppy very excited and eager to please, but very easily distracted and not always actually doing what it said it was going to do. ChatGPT was admittedly not the right AI tool for this job as it seemed to want to rewrite the entire thing every time I prompted and it’d just change other random things along it’s way. Often just loosing entire sections, or adding in random dead links to the nav. We went on a few side quests with a dark/light mode slider, but it just looked ugly and it kept putting the labels the wrong way round until I gave up. At one point we had an animated lava-lamp style blob background but it just looked weird … but honestly this ones on me, I don’t know what I expected to happen with that prompt. I think the icing on the cake for this experiment is it’s passing comment about doing better that I’d do on a Friday evening … for the record, it’s Thursday today, but ChatGPT keeps thinking it’s Friday, and I don’t want to be the one to break the bad news. 
+    </p>
+  </section>
+
+  <section>
+    <h2>Photography</h2>
+    <div class="gallery">
+      <img src='https://drscdn.500px.org/photo/73702479/q%3D80_m%3D600/v2?sig=476597442a2ec91222ad69080974aed89955143af037bbc442e3bc65419786d7' alt='London Lights by Ben Deavin on 500px.com' />
+      <img src='https://drscdn.500px.org/photo/73702483/q%3D80_m%3D600/v2?sig=c42ec395c908de527f7ba060ca1583dd1a1ae07834657a954ca36e1526f61dd9' alt='Aurora Borealis by Ben Deavin on 500px.com' />
+      <img src='https://drscdn.500px.org/photo/73702459/q%3D80_m%3D600/v2?sig=c0a7666ab4be8155393a0228702ece691a4fd15ceeb1965dfd06389b89471426' alt='Into the eyes by Ben Deavin on 500px.com' />
+      <img src='https://drscdn.500px.org/photo/73702467/q%3D80_m%3D600/v2?sig=9ff03197d77c5174bda351d9523a346f1cf5dad5d897e99a70cde7f095a47274' alt='London Night by Ben Deavin on 500px.com' />
+    </div>
+  </section>
+
+  <footer>
+    <p>© Ben Deavin – All rights reserved</p>
+  </footer>
+</body>
+</html>
