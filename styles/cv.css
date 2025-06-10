@@ -37,7 +37,7 @@ body {
     margin: 0;
     box-shadow: none;
     page-break-after: always;
-    padding: 10mm 20mm;
+    padding: 8mm 20mm;
   }
 
   .cv-page:last-child {
