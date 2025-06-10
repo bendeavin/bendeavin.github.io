@@ -1,6 +1,7 @@
 User-agent: *
 Disallow: /archive/
-Disallow: /data/
+Disallow: /files/
+
 
 # Allow all other content
 Allow: / 

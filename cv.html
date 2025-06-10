@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ben Deavin - CV</title>
+    <meta
+      name="description"
+      content="CV of Ben Deavin, Senior Software Engineering Manager"
+    />
+    <meta name="author" content="Ben Deavin" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/favicon.svg" />
+    <link rel="stylesheet" href="/styles/cv.css" />
+  </head>
+  <body>
+    <nav class="action-buttons no-print">
+      <a href="/" class="back-link no-print">
+        <svg viewBox="0 0 24 24" class="button-icon">
+          <path
+            d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"
+          />
+        </svg>
+        <span>Back to Home</span>
+      </a>
+      <button onclick="window.print()" class="action-button">
+        <svg viewBox="0 0 24 24" class="button-icon">
+          <path
+            d="M19 8H5c-1.66 0-3 1.34-3 3v6h4v4h12v-4h4v-6c0-1.66-1.34-3-3-3zm-3 11H8v-5h8v5zm3-7c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm-1-9H6v4h12V3z"
+          />
+        </svg>
+        <span>Print</span>
+      </button>
+      <button onclick="downloadCV()" class="action-button">
+        <svg viewBox="0 0 24 24" class="button-icon">
+          <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z" />
+        </svg>
+        <span>Download</span>
+      </button>
+    </nav>
+
+    <main class="cv-container">
+      <!-- Page 1 -->
+      <article class="cv-page">
+        <header class="cv-header">
+          <div class="cv-header-left">
+            <h1>Ben Deavin</h1>
+            <p>Senior Engineering Manager</p>
+          </div>
+          <div class="cv-header-right">
+            <p>
+              <span>
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+                  />
+                </svg>
+                Woking, UK
+              </span>
+            </p>
+            <p>
+              <a href="https://bendeavin.co.uk">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"
+                  />
+                </svg>
+                bendeavin.co.uk
+              </a>
+            </p>
+            <p>
+              <a href="https://www.linkedin.com/in/bendeavin/">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"
+                  />
+                </svg>
+                linkedin.com/in/bendeavin
+              </a>
+            </p>
+            <p>
+              <a href="https://github.com/bendeavin">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"
+                  />
+                </svg>
+                github.com/bendeavin
+              </a>
+            </p>
+          </div>
+        </header>
+
+        <section class="cv-section">
+          <h2>Professional Summary</h2>
+          <p>
+            Experienced leader and manager with a deep technical background
+            spanning multiple tech stacks, architectural patterns, industries
+            and organisation set ups. Focused on developing a great working
+            culture through outstanding communication and building genuine
+            relationships where everyone feels heard and valued. Able to quickly
+            understand complex systems and problem spaces and effectively plan
+            and deliver the right solutions given the wider context.
+          </p>
+        </section>
+
+        <section class="cv-section">
+          <h2>Professional Skills</h2>
+          <div class="skills-grid">
+            <div class="skill-category">
+              <ul class="skill-list">
+                <li>
+                  People & Team Management
+                  <span class="skill-detail"
+                    >Hiring, development, career progression, coaching leaders,
+                    organizational design</span
+                  >
+                </li>
+                <li>
+                  Project & Delivery
+                  <span class="skill-detail"
+                    >Planning, management, agile methodologies</span
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="skill-category">
+              <ul class="skill-list">
+                <li>
+                  Community & Communication
+                  <span class="skill-detail"
+                    >Leading communities, senior stakeholder engagement</span
+                  >
+                </li>
+                <li>
+                  Product Strategy
+                  <span class="skill-detail"
+                    >AB testing, prototyping, feature scoping</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="cv-section">
+          <h2>Technical Skills</h2>
+          <div class="skills-grid">
+            <div class="skill-category">
+              <ul class="skill-list">
+                <li>
+                  Distributed systems & microservices
+                  <span class="skill-detail"
+                    >Event-driven architecture, micro frontends</span
+                  >
+                </li>
+                <li>
+                  Full stack development
+                  <span class="skill-detail"
+                    >TypeScript, React, Java, Groovy, C#</span
+                  >
+                </li>
+                <li>
+                  Testing & QA
+                  <span class="skill-detail"
+                    >TDD, integration, E2E, contract, visual regression</span
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="skill-category">
+              <ul class="skill-list">
+                <li>
+                  Cloud & Performance
+                  <span class="skill-detail"
+                    >AWS, GCP, serverless, Core Web Vitals</span
+                  >
+                </li>
+                <li>
+                  Developer Experience
+                  <span class="skill-detail"
+                    >CI/CD, environment optimization, workflow improvement</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="cv-section">
+          <h2>Work Experience</h2>
+
+          <article class="cv-item">
+            <div class="company-header">
+              <h3>Secret Escapes</h3>
+              <time class="company-duration"
+                >September 2017 - Present (7y 9m)</time
+              >
+            </div>
+            <div class="role-progression">
+              <span
+                ><strong>Senior Engineering Manager</strong> (2023 -
+                Present)</span
+              >
+              <span><strong>Engineering Manager</strong> (2019 - 2023)</span>
+              <span><strong>Tech Lead</strong> (2017 - 2019)</span>
+            </div>
+            <ul>
+              <li>
+                <strong>Team Leadership:</strong> Overseeing three product
+                development squads in the 'member experience' space, accountable
+                for core delivery metrics and cross-squad communication
+              </li>
+              <li>
+                <strong>People Management:</strong> Managing a mix of managers,
+                leads and individual contributors, mentoring, coaching and
+                guiding their career development
+              </li>
+              <li>
+                <strong>Team Building:</strong> Responsible for hiring and
+                building new squads, establishing ways of working and quickly
+                getting to a place of high performance
+              </li>
+              <li>
+                <strong>Technical Leadership:</strong> Frontend community lead,
+                bringing specialists from multiple squads together to share
+                experience and shape our technical direction in the frontend
+                space
+              </li>
+              <li>
+                <strong>Performance Optimization:</strong> Responsible for
+                frontend performance, establishing tooling and budgets for
+                monitoring Core Web Vitals across multiple platforms and
+                prioritising improvements
+              </li>
+              <li>
+                <strong>Strategic Planning:</strong> Key contributor to
+                strategy, at multiple levels including group architecture and
+                both tech and product strategy and project planning
+              </li>
+              <li>
+                <strong>Technical Delivery:</strong> Lead the delivery of
+                several new microservices including rebuilding search capability
+                from the ground up with OpenSearch (formally ElasticSearch)
+              </li>
+            </ul>
+          </article>
+        </section>
+      </article>
+
+      <!-- Page 2 -->
+      <article class="cv-page">
+        <section class="cv-section">
+          <article class="cv-item">
+            <div class="company-header">
+              <h3>PA Consulting Group</h3>
+              <time class="company-duration"
+                >January 2013 – September 2017 (4y 9m)</time
+              >
+            </div>
+            <div class="role-progression">
+              <span><strong>Consultant</strong> (2015 - 2017)</span>
+              <span><strong>Consultant Analyst</strong> (2013 - 2015)</span>
+            </div>
+            <ul>
+              <li>
+                <strong>Tech Lead:</strong> Technical lead on a team for a large
+                public sector project, working with a mixture of contractors,
+                civil servants and consultants. Building a microservices
+                platform and case working system
+              </li>
+              <li>
+                <strong>Cloud Architect:</strong> Designing and implementing a
+                scalable architecture for a large IoT project with up to 200,000
+                connected devices running on Google Cloud Platform
+              </li>
+              <li>
+                <strong>Lead Android Developer:</strong> Team lead for a fast
+                moving technology start up, taking a complex app from concept to
+                production in four months, managing a scrum team of five
+                developers
+              </li>
+              <li>
+                <strong>Software Engineer:</strong> Various projects working as
+                a full stack developer, working with clients to gather and
+                manage requirements, and working with skilled teams (both on and
+                offshore) delivering excellent quality and timely releases
+              </li>
+              <li>
+                <strong>Wearable Technology Expert:</strong> Working with
+                numerous clients helping them see the potential of wearable
+                technology and developing numerous prototypes with Google Glass,
+                Android Wear and more
+              </li>
+            </ul>
+          </article>
+
+          <article class="cv-item">
+            <div class="company-header">
+              <h3>Smarta Enterprise Ltd</h3>
+              <time class="company-duration"
+                >August 2010 – January 2013 (2y 5m)</time
+              >
+            </div>
+            <div class="role-progression">
+              <span><strong>Web Developer</strong></span>
+            </div>
+            <ul>
+              <li>
+                <strong>Web Developer:</strong> .NET web developer, working on
+                the Smarta Business Builder, a SaaS portal integrating a number
+                of third party products into one service
+              </li>
+              <li>
+                <strong>Full Stack Development:</strong> Working on all aspects
+                of the project, including database, server-side code, partner
+                APIs, security, and front end HTML, CSS and JavaScript
+              </li>
+              <li>
+                <strong>System Design:</strong> Designed various parts of the
+                system, including leading a ground-up construction of an email
+                messaging centre that gave all products a unified platform to
+                reliably send and track emails
+              </li>
+              <li>
+                <strong>Product Improvement:</strong> Identified ways to improve
+                the product from design and user experience changes to adding
+                new features and functionality and improving performance
+              </li>
+            </ul>
+          </article>
+
+          <article class="cv-item">
+            <div class="company-header">
+              <h3>Goldman Sachs</h3>
+              <time class="company-duration"
+                >June 2008 – June 2009 (1y placement)</time
+              >
+            </div>
+            <div class="role-progression">
+              <span><strong>Industrial Work Placement</strong></span>
+            </div>
+            <ul>
+              <li>
+                <strong>Software Developer:</strong> Infrastructure and
+                middleware as part of the work placement scheme
+              </li>
+              <li>
+                <strong>Development:</strong> Designing, developing, testing and
+                deploying tools to help with messaging
+              </li>
+              <li>
+                <strong>System Deployment:</strong> Deployed application on
+                distributed UNIX based systems
+              </li>
+              <li>
+                <strong>Project Ownership:</strong> Took ownership of a major
+                project from start through to support
+              </li>
+            </ul>
+          </article>
+        </section>
+
+        <section class="cv-section">
+          <h2>Education</h2>
+          <article class="cv-item">
+            <div class="degree-header">
+              <h3>BSc Computer Science (with industrial placement)</h3>
+              <p class="text-right">First Class Honours</p>
+            </div>
+            <p class="date">University of Bath | 2006 - 2010</p>
+          </article>
+        </section>
+
+        <section class="cv-section">
+          <h2>Interests & Hobbies</h2>
+          <ul class="interests-list">
+            <li>Time with family</li>
+            <li>Travel</li>
+            <li>Photography</li>
+            <li>Drumming and music</li>
+            <li>Technical side projects</li>
+            <li>Emerging technologies & gadgets</li>
+          </ul>
+        </section>
+      </article>
+    </main>
+    <script>
+      function downloadCV() {
+        const link = document.createElement("a");
+        link.href = "files/cv.pdf";
+        link.download = "Ben_Deavin-Senior_Engineering_Manager_CV.pdf";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      }
+    </script>
+  </body>
+</html>
