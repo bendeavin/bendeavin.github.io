@@ -5,3 +5,6 @@ Disallow: /files/
 
 # Allow all other content
 Allow: / 
+
+# Sitemap
+Sitemap: https://bendeavin.co.uk/sitemap.xml

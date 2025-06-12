@@ -13,6 +13,7 @@
       name="keywords"
       content="software engineering, engineering manager, frontend development, photography, Woking, UK"
     />
+    <link rel="canonical" href="https://bendeavin.co.uk/" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
@@ -52,6 +53,15 @@
     <meta name="revisit-after" content="7 days" />
     <meta name="generator" content="Custom" />
 
+    <!-- Preload critical resources -->
+    <link rel="preload" href="/styles/styles.css" as="style" />
+    <link
+      rel="preload"
+      href="https://bendeavin.imgix.net/BEN_square.jpg?w=120&h=120&fit=crop&auto=format"
+      as="image"
+    />
+    <link rel="preload" href="/scripts/theme.js" as="script" />
+
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="apple-touch-icon" href="/favicon.svg" />
@@ -60,6 +70,29 @@
     <link rel="stylesheet" href="/styles/styles.css" />
     <script src="/scripts/theme.js" defer></script>
     <script src="/scripts/gallery.js" defer></script>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Ben Deavin",
+        "url": "https://bendeavin.co.uk",
+        "jobTitle": "Senior Software Engineering Manager",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Secret Escapes"
+        },
+        "sameAs": [
+          "https://github.com/bendeavin",
+          "https://www.linkedin.com/in/bendeavin/",
+          "https://500px.com/p/bendeavin",
+          "https://colourblindphoto.tumblr.com/"
+        ],
+        "image": "https://bendeavin.imgix.net/BEN_square.jpg",
+        "description": "Senior Software Engineering Manager and occasional photographer based in Woking, UK. Leading cross-functional teams and building great user-facing products."
+      }
+    </script>
   </head>
   <body class="no-transition">
     <div class="theme-transition-overlay"></div>
