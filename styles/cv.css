@@ -28,27 +28,6 @@ body {
   margin-bottom: 0;
 }
 
-@media print {
-  body {
-    background: none;
-  }
-
-  .cv-page {
-    margin: 0;
-    box-shadow: none;
-    page-break-after: always;
-    padding: 8mm 20mm;
-  }
-
-  .cv-page:last-child {
-    page-break-after: avoid;
-  }
-
-  .no-print {
-    display: none;
-  }
-}
-
 .cv-header {
   display: flex;
   justify-content: space-between;
@@ -358,5 +337,137 @@ nav {
   nav,
   .no-print {
     display: none !important;
+  }
+}
+
+/* Mobile-friendly styles */
+@media screen and (max-width: 768px) {
+  .cv-page {
+    width: 100%;
+    padding: 20px;
+    min-height: auto;
+  }
+
+  .cv-header {
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .cv-header-right {
+    text-align: left;
+    width: 100%;
+  }
+
+  .cv-header-right p {
+    margin: 0.3em 0;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .skill-category {
+    margin-bottom: 0;
+  }
+
+  .interests-list {
+    display: block;
+    padding-left: 1.2em;
+  }
+
+  .interests-list li {
+    display: list-item;
+    margin: 0.3em 0;
+  }
+
+  .interests-list li:not(:last-child)::after {
+    content: none;
+  }
+
+  .cv-section h2 {
+    font-size: 1.1em;
+  }
+
+  .cv-header h1 {
+    font-size: 1.8em;
+  }
+
+  .cv-item ul {
+    padding-left: 1.2rem;
+  }
+
+  .company-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.2em;
+  }
+
+  .company-duration {
+    font-size: 0.85em;
+  }
+
+  .action-buttons {
+    padding: 0.5rem;
+    gap: 0.5rem;
+  }
+
+  .action-button,
+  .back-link {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.85rem;
+  }
+
+  degree-header {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+
+/* Print styles */
+@media print {
+  body {
+    background: none;
+  }
+
+  .cv-page {
+    width: 210mm;
+    min-height: 297mm;
+    margin: 0;
+    padding: 8mm 20mm;
+    box-shadow: none;
+    page-break-after: always;
+  }
+
+  .cv-page:last-child {
+    page-break-after: avoid;
+  }
+
+  .cv-header {
+    flex-direction: row;
+    gap: 2em;
+  }
+
+  .cv-header-right {
+    text-align: right;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5em;
+  }
+
+  .company-header {
+    flex-direction: row;
+    align-items: baseline;
+  }
+
+  .no-print {
+    display: none;
+  }
+
+  nav,
+  .action-buttons {
+    display: none;
   }
 }
