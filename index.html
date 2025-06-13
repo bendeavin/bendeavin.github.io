@@ -66,7 +66,17 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@700&display=swap"
       rel="stylesheet"
     />
-
+    <script>
+      (() => {
+        // Set initial theme before content loads
+        const prefersDark = window.matchMedia(
+          "(prefers-color-scheme: dark)"
+        ).matches;
+        const savedTheme = localStorage.getItem("theme");
+        const initialTheme = savedTheme || (prefersDark ? "dark" : "light");
+        document.documentElement.setAttribute("data-theme", initialTheme);
+      })();
+    </script>
     <link rel="stylesheet" href="/styles/styles.css" />
     <script src="/scripts/theme.js" defer></script>
     <script src="/scripts/gallery.js" defer></script>

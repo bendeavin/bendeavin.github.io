@@ -30,7 +30,6 @@
   transition: none !important;
 }
 
-/* Theme transition overlay */
 .theme-transition-overlay {
   position: fixed;
   top: 0;

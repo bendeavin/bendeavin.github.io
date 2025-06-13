@@ -1,8 +1,4 @@
-// Set initial theme before content loads
-const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-const savedTheme = localStorage.getItem("theme");
-const initialTheme = savedTheme || (prefersDark ? "dark" : "light");
-document.documentElement.setAttribute("data-theme", initialTheme);
+const initialTheme = document.documentElement.getAttribute("data-theme");
 
 // Theme toggle functionality
 document.addEventListener("DOMContentLoaded", () => {
