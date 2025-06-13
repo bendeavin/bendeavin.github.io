@@ -12,13 +12,13 @@
 }
 
 [data-theme="light"] {
-  --primary-color: #1976d2;
-  --primary-hover: #1565c0;
+  --primary-color: #1565c0;
+  --primary-hover: #0d47a1;
   --bg-color-1: #f5f5f5;
   --bg-color-2: #ffffff;
   --card-bg: rgba(255, 255, 255, 0.95);
-  --text-primary: #333333;
-  --text-secondary: #666666;
+  --text-primary: #222222;
+  --text-secondary: #444444;
   --accent-color: #1976d2;
 }
 
